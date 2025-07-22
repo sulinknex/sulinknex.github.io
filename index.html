@@ -1,53 +1,112 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SULINKNEX PTE. LTD.</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SULINKNEX PTE. LTD.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .service-card {
+      border: 1px solid #e0e0e0;
+      padding: 1.5rem;
+      border-radius: 8px;
+      background-color: #fafafa;
+    }
+    .service-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    .project {
+      background-color: #f9f9f9;
+      padding: 3rem 2rem;
+      margin-top: 2rem;
+      border-left: 5px solid #000;
+    }
+    footer {
+      background-color: #000000;
+      color: #ffffff;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>SULINKNEX PTE. LTD.</h1>
-            <p>Expert Software Development Consulting</p>
-        </div>
-    </header>
-    <section class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>We provide expert software development consulting services, offering guidance and support in design, coding, testing, project management, and technology strategy. We work closely with clients to deliver customized solutions tailored to their needs.</p>
-        </div>
-    </section>
-    <section class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Software Design & Architecture</li>
-                <li>Custom Software Development</li>
-                <li>Quality Assurance & Testing</li>
-                <li>Project Management</li>
-                <li>Technology Strategy & Consulting</li>
-            </ul>
-        </div>
-    </section>
-    <section class="projects">
-        <div class="container">
-            <h2>Featured Project</h2>
-            <p>Developed a specialized highway construction management platform to support city infrastructure needs — showcasing our ability to deliver large-scale, real-world solutions.</p>
-        </div>
-    </section>
-    <section class="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <p>Email us at: <a href="mailto:contact@sulinknex.com">contact@sulinknex.com</a></p>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 SULINKNEX PTE. LTD. All rights reserved.</p>
-        </div>
-    </footer>
+  <header>
+    <h1>SULINKNEX PTE. LTD.</h1>
+    <p>Expert Software Development Consulting</p>
+  </header>
+  <section>
+    <h2 class="section-title">About Us</h2>
+    <p>We specialize in software development consulting, offering tailored solutions in software design, architecture, coding, testing, and project management. Our mission is to support organizations with scalable, efficient, and reliable software systems.</p>
+  </section>
+  <section>
+    <h2 class="section-title">Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Software Architecture</h3>
+        <p>Scalable and modern systems design tailored to your business needs.</p>
+      </div>
+      <div class="service-card">
+        <h3>Custom Development</h3>
+        <p>Robust and maintainable code development across technologies.</p>
+      </div>
+      <div class="service-card">
+        <h3>Project Management</h3>
+        <p>Agile planning, execution, and delivery for software projects.</p>
+      </div>
+      <div class="service-card">
+        <h3>Technology Strategy</h3>
+        <p>Advising on stack choices, scalability, and development processes.</p>
+      </div>
+    </div>
+  </section>
+  <section class="project">
+    <h2 class="section-title">Project Highlight</h2>
+    <p>We collaborated with city stakeholders to build highway construction software, enabling better infrastructure planning and execution with real-time data tools.</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 SULINKNEX PTE. LTD. | All rights reserved.</p>
+  </footer>
 </body>
 </html>
