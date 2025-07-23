@@ -1,12 +1,11 @@
-<!-- services.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services | SULINKNEX</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | SULINKNEX</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
   <header>
@@ -20,29 +19,20 @@
     </nav>
   </header>
   <main>
-    <section class="hero" data-aos="fade-up">
-      <h1>Our Services</h1>
-      <p>Empowering businesses through custom software development.</p>
-    </section>
-    <section class="section" data-aos="fade-right">
-      <h2>Software Design</h2>
-      <p>Custom architecture tailored to your business goals.</p>
-    </section>
-    <section class="section" data-aos="fade-left">
-      <h2>Coding & Development</h2>
-      <p>Robust, scalable, and maintainable software solutions.</p>
-    </section>
     <section class="section" data-aos="fade-up">
-      <h2>Testing & QA</h2>
-      <p>Ensure quality with automated and manual testing practices.</p>
-    </section>
-    <section class="section" data-aos="fade-up">
-      <h2>Project Management</h2>
-      <p>Expert coordination from concept to delivery.</p>
-    </section>
-    <section class="section" data-aos="fade-up">
-      <h2>Industry Customization</h2>
-      <p>Like our city highway construction platform — we build what you need.</p>
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
     </section>
   </main>
   <footer>
